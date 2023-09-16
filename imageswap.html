@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><h1>Image Swapping</h1></title>
+
+    <Script>
+
+        function swapimage() {
+
+            const image1 = document.getElementById("first").src;
+            const image2 = document.getElementById("third").src;
+            document.getElementById("first").src = image2;
+            document.getElementById("third").src = image1;
+
+        }
+
+        
+
+</Script>
+</head>
+<body>
+    <img src="img1.jpg" id="first" width="500" height="500" alt="image1">
+    <img src="img3.jpg" id="third" width="500" height="500" alt="image2">
+    <button id="swap" onclick="swapimage()  ;">Swap Image </button>
+    
+</body>
+</html>
